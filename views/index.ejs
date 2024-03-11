@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Blog App With Express.JS and EJS</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">
+        This is a simple Node.js and Express.js blog app with EJS templating
+        engine.
+      </p>
+    </div>
+  </div>
+  <a href="/create" class="btn btn-primary">New Post</a>
+</div>
+<div class="container mt-5 d-flex flex-wrap">
+  <% if (locals.datas && locals.datas.length > 0) { %>
+    <% locals.datas.forEach(data => { %>
+      <div class="card mx-3 my-3" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title"><%= data.title %></h5>
+          <p class="card-text"><%= data.content %></p>
+          <a href="#" class="card-link"><%= data.author %></a>
+        </div>
+      </div>
+      <!-- Log properti data -->
+    <% }) %>
+  <% } else { %>
+    <h1>No data found</h1>
+  <% } %>
+  
+  </div>
+  <%- include('partials/footer.ejs') %>
+</div>

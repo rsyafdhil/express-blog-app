@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Create New Post</h1>
+    </div>
+  </div>
+</div>
+<div class="container mt-5 border p-4 rounded-3">
+  <form action="/submit" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="title" />
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">Content</label>
+      <input type="text" name="content" class="form-control" id="content" />
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" name="author" class="form-control" id="author" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <a href="/" class="text-dark mt-5"><< back</a>
+</div>
+
+<%- include('partials/footer.ejs') %>
