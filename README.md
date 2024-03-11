@@ -1,7 +1,7 @@
 ﻿# express-blog-app
-## Basic Express.JS and EJS Template Engine blog app.
+### Basic Express.JS and EJS Template Engine blog app.
 
-### How to install this project :
+- How to install this project :
 ```
 mkdir yourFolderName
 cd yourFolderName
