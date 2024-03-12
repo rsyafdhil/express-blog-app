@@ -6,6 +6,10 @@ Basic Express.JS and EJS Template Engine blog app.
 ```
 git clone https://github.com/rsyafdhil/express-blog-app
 ```
+- Go to the directory
+```
+cd express-blog-app
+```
 - Install all the NPM package
 ```
 npm i
