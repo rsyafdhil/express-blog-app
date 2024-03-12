@@ -2,15 +2,7 @@
 Basic Express.JS and EJS Template Engine blog app.
 
 ### How to install this project :
-- Create new directory
-```
-mkdir <newDir>
-```
-- Go to that directory
-```
-cd <newDir>
-```
-- Git clone this repo
+- Make new directory with cloning this repo
 ```
 git clone https://github.com/rsyafdhil/express-blog-app
 ```
