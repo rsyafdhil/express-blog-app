@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container" style="margin-top: 100px">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="fs-3"><%= title %>.</h1>
+      <p>By <span class="text-decoration-underline"><%= author %></span></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="mt-5"><%= content %></p>
+    </div>
+  </div>
+  <p>Created at <span class="text-decoration-underline"><%= date %></span></p>
+  <a href="/" class="btn btn-primary btn-sm">&laquo; Back</a>
+</div>
+<%- include('partials/footer.ejs') %>
